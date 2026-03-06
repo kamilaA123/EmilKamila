@@ -1,4 +1,4 @@
-# ⚡ EmilKamila - Умный помощник для выбора энергетика
+# ⚡ Energy Bot - Умный помощник для выбора энергетика
 
 [![Python](https://img.shields.io/badge/python-3.13+-blue.svg)](https://www.python.org/)
 [![PyTelegramBotAPI](https://img.shields.io/badge/PyTelegramBotAPI-4.x-blue)](https://pytba.readthedocs.io/ru/latest/index.html)
