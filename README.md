@@ -1,7 +1,7 @@
 # ⚡ EmilKamila - Умный помощник для выбора энергетика
 
 [![Python](https://img.shields.io/badge/python-3.13+-blue.svg)](https://www.python.org/)
-[![PyTelegramApi](https://pytba.readthedocs.io/ru/latest/index.html)](https://pytba.readthedocs.io/ru/latest/index.html)
+[![PyTelegramApi](https://pytba.readthedocs.io/ru/latest/index.html)](https://pytba.readthedocs.io/ru/latest/index.html#)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 **EmilKamila** — это командный проект, представляющий собой многофункционального Telegram-бота. Бот не только умеет анализировать тональность комментариев с помощью ML-модели, но и дает персональные рекомендации по выбору энергетических напитков, используя нейросеть.
