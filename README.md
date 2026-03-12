@@ -13,7 +13,7 @@
 ## 📸 Демонстрация работы
 
 ### Главное меню бота
-![Главное меню бота](file:///C:/Users/user/Desktop/бот/1.pdf)
+![Главное меню бота](https://sun9-43.userapi.com/s/v1/ig2/ZhPCPoxOGTfCbhPXnQbYn-ZaLBYwMEt6G7DUB8u_gJhZXSfRhbINoTiGh8_6dwooKraeqcM-lrZ4OkCHO1l24y1N.jpg?quality=95&as=32x7,48x10,72x16,108x23,160x35,240x52,360x78,480x104,540x117,640x139,720x156,1080x234,1222x265&from=bu&cs=1222x0)
 *Главное меню с кнопками: Энергос, Корзина, Консультант*
 
 ### Пример анализа комментария
