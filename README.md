@@ -17,11 +17,11 @@
 *Главное меню с кнопками: Энергос, Корзина, Консультант*
 
 ### Пример анализа комментария
-![Анализ комментария](assets/sentiment_analysis.png)
+![Анализ комментария](https://sun9-61.userapi.com/s/v1/ig2/gjiFezfdILRmQW6W59vT5dqscO5xbKkOSQH_n3x9HHlo0kWjvoo3gXDhrCGcM9d_dxat81lbzkgdQsLFk3hGo2C2.jpg?quality=95&as=32x27,48x41,72x61,108x92,160x136,240x205,360x307,480x409,540x460,611x521&from=bu&u=tpvDhN3VTJxz68tQle_9WLsy--zlTJ1a0XUzKF_pZ14&cs=611x0)
 *Определение токсичности комментария с помощью модели трансформера*
 
 ### Пример рекомендации энергетика
-![Рекомендация](assets/recommendation.png)
+![Рекомендация](https://sun9-67.userapi.com/s/v1/ig2/F3CE9WBAUg4w3KWPytZaO31e13y5_e2_9SVUV4WgCcN0Q5uZdWnE1IX-XVj3TxTpVpNX6bTLxmpYc5CQ7SG2nazZ.jpg?quality=95&as=32x14,48x20,72x31,108x46,160x68,240x103,360x154,480x205,540x231,640x273,720x308,1080x461,1222x522&from=bu&cs=1222x0)
 *Консультация по энергетикам через OpenRouter AI*
 
 **Energy Bot** — это командный проект, представляющий собой многофункционального Telegram-бота для заказа энергетических напитков. Бот умеет анализировать комментарии на токсичность с помощью модели трансформера, давать консультации через нейросеть и принимать оплату через ЮMoney.
@@ -43,31 +43,18 @@
 *   **Платежи:** YooMoney API
 *   **Система контроля версий:** Git + GitHub
 
-## 🤖 Использованные API и модели
+### 1. API для AI-консультанта
+**Название:** OpenRouter API  
+**Описание:** API для доступа к языковым моделям. В проекте используется для создания консультанта по энергетикам.
 
-### 1. API нейросети для консультаций
+### 2. Базовая модель ИИ
+**Название:** deepseek
 
-**Название API:** [OpenRouter API](https://openrouter.ai/)
+### 3. Модель трансформера
+**Название:** Кастомная модель на базе RuBERT (`russian_text_classifier.pth`)  
+**Задача:** Классификация текста - определение токсичности комментариев (оскорбления, угрозы, нецензурная брань)
 
-**Описание:** OpenRouter — это унифицированный API, предоставляющий доступ к множеству языковых моделей (включая бесплатные). Позволяет использовать различные нейросети через единый интерфейс.
-
-**Использование в проекте:**
-```python
-def ask_ai(prompt):
-    headers = {
-        'Authorization': f'Bearer {OPENROUTER_API_KEY}',
-        'Content-Type': 'application/json'
-    }
-    
-    data = {
-        'model': 'openrouter/free',  # Бесплатная модель
-        'messages': [
-            {'role': 'user', 'content': f"Ты консультант по энергетикам. Коротко ответь на вопрос: {prompt}"}
-        ],
-        'max_tokens': 100,
-        'temperature': 0.7
-    }
-    
-    response = requests.post('https://openrouter.ai/api/v1/chat/completions', 
-                            headers=headers, json=data)
-    return response.json()['choices'][0]['message']['content']
+## 🔄 Система контроля версий
+- **Git** + **GitHub**
+- Репозиторий: [https://github.com/kamilaA123/EmilKamila](https://github.com/kamilaA123/EmilKamila)
+- Ветки: `main` (стабильная), `Kamila` (разработка), `Emil` (разработка)
