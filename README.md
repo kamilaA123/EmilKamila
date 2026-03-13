@@ -57,4 +57,4 @@
 ## 🔄 Система контроля версий
 - **Git** + **GitHub**
 - Репозиторий: [https://github.com/kamilaA123/EmilKamila](https://github.com/kamilaA123/EmilKamila)
-- Ветки: `main` (стабильная), `Kamila` (разработка), `Emil` (разработка)
+- Ветки: `main` (стабильная), `Kamila` (оформление), `Emil` (разработка)
